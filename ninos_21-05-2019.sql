@@ -1,0 +1,453 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : NINOS
+ Source Server Type    : MySQL
+ Source Server Version : 100137
+ Source Host           : XXX.XXX.XXX.XXX:3306
+ Source Schema         : ninos
+
+ Target Server Type    : MySQL
+ Target Server Version : 100137
+ File Encoding         : 65001
+
+ Date: 21/05/2019 10:22:01
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for ci_sessions
+-- ----------------------------
+DROP TABLE IF EXISTS `ci_sessions`;
+CREATE TABLE `ci_sessions`  (
+  `id` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `ip_address` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `timestamp` int(10) UNSIGNED NOT NULL DEFAULT 0,
+  `data` blob NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `ci_sessions_timestamp`(`timestamp`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of ci_sessions
+-- ----------------------------
+INSERT INTO `ci_sessions` VALUES ('01ptgih2g3iuve26lu9r87kcfvbu9rov', '103.246.3.30', 1554529901, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343532393930313B);
+INSERT INTO `ci_sessions` VALUES ('075acv02p9354ei5raqh3adlf8n8s5uh', '::1', 1554529917, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343532393931373B);
+INSERT INTO `ci_sessions` VALUES ('2044esj5ilnvls4ph482p5hfc1bl0gj2', '103.246.3.30', 1556179614, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535363137393538353B);
+INSERT INTO `ci_sessions` VALUES ('2df31088lcojuahq16jr6vk10ui20jja', '103.246.3.30', 1556176859, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535363137363835383B);
+INSERT INTO `ci_sessions` VALUES ('37snvnbvemek19uolcf8qboamjnp9ag2', '103.246.3.30', 1554957134, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343935373133343B);
+INSERT INTO `ci_sessions` VALUES ('3b30msvum1tfpbi2tdibv5ef3oke22qg', '103.246.3.30', 1554958500, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343935383439383B);
+INSERT INTO `ci_sessions` VALUES ('5cs794tjic38u6n7datfmgjus9qbura9', '103.246.3.30', 1555557077, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535353535373036383B617574685F6D6573736167657C733A32323A223C703E496E636F7272656374204C6F67696E3C2F703E223B5F5F63695F766172737C613A313A7B733A31323A22617574685F6D657373616765223B733A333A226F6C64223B7D);
+INSERT INTO `ci_sessions` VALUES ('6h6244fbrs56s91uos320pgms8e687e6', '103.246.3.30', 1554176355, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343137363335313B6964656E746974797C733A343A22796F6769223B757365726E616D657C733A343A22796F6769223B656D61696C7C733A31363A22796F6769406B6F72746973612E636F6D223B757365725F69647C733A313A2235223B6F6C645F6C6173745F6C6F67696E7C733A31303A2231353534303835333137223B6C6173745F636865636B7C693A313535343137363335313B67726176617461727C733A33323A223531316335636163663333633630646139343065643361626664306233316334223B);
+INSERT INTO `ci_sessions` VALUES ('6srihtk8ossglirmga2k76qq87crfo5q', '103.246.3.30', 1554784846, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343738343834363B);
+INSERT INTO `ci_sessions` VALUES ('74tbu7msdg95a6p73i473rhhdi86khg0', '103.246.3.30', 1554705712, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343730353731323B);
+INSERT INTO `ci_sessions` VALUES ('793dlgiqk3p1ddco8v43m8aoq4ol54l6', '103.246.3.30', 1554958399, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343935383339343B);
+INSERT INTO `ci_sessions` VALUES ('85vspsgk9vj1u54v8ljsg3pmvt6oli1r', '103.246.3.30', 1554958409, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343935383430383B6964656E746974797C733A343A22796F6769223B757365726E616D657C733A343A22796F6769223B656D61696C7C733A31363A22796F6769406B6F72746973612E636F6D223B757365725F69647C733A313A2235223B6F6C645F6C6173745F6C6F67696E7C733A31303A2231353534313736333531223B6C6173745F636865636B7C693A313535343935383430383B67726176617461727C733A33323A223531316335636163663333633630646139343065643361626664306233316334223B);
+INSERT INTO `ci_sessions` VALUES ('8657h08dq8mk6g11vqa9uq9pbu0upc7r', '103.246.3.30', 1557212850, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535373231323835303B);
+INSERT INTO `ci_sessions` VALUES ('8k9iboiki55tgirebn59fnu6eob4ausa', '103.246.3.30', 1554524666, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343532343636303B);
+INSERT INTO `ci_sessions` VALUES ('atoefb9hpjsbh9cr0oldgqdh8a5k0mua', '103.246.3.30', 1555557384, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535353535373038343B6964656E746974797C733A343A22796F6769223B757365726E616D657C733A343A22796F6769223B656D61696C7C733A31363A22796F6769406B6F72746973612E636F6D223B757365725F69647C733A313A2235223B6F6C645F6C6173745F6C6F67696E7C733A31303A2231353534393538343038223B6C6173745F636865636B7C693A313535353535373038333B67726176617461727C733A33323A223531316335636163663333633630646139343065643361626664306233316334223B);
+INSERT INTO `ci_sessions` VALUES ('bffmi30vn5m9p7cav294ebg7lst29kv2', '103.246.3.30', 1554529897, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343532393839373B);
+INSERT INTO `ci_sessions` VALUES ('bodag33bvgsvvdt71qchg622slnufcl1', '103.246.3.30', 1554860149, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343836303134383B);
+INSERT INTO `ci_sessions` VALUES ('d2jd9rgod62akvl0poetfv4udn2dtleq', '103.246.3.30', 1554529849, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343532393833313B);
+INSERT INTO `ci_sessions` VALUES ('eb7vhi5h49lk8bqv28nl9ujqe1ku6h4a', '103.246.3.30', 1554176332, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343137363332393B);
+INSERT INTO `ci_sessions` VALUES ('enavtpcss0o691m05sjc2inr4uer2v2k', '103.246.3.30', 1554687395, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343638373339353B);
+INSERT INTO `ci_sessions` VALUES ('eocievc33vttqst07usctphip166eemr', '103.246.3.30', 1554687401, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343638373430313B);
+INSERT INTO `ci_sessions` VALUES ('f5kc2uvoku5klpgupb4f7obh7qur179f', '103.246.3.30', 1554529864, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343532393836343B);
+INSERT INTO `ci_sessions` VALUES ('g17bugr9am69l4hffcfh8adk94i1davv', '::1', 1554529888, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343532393833313B);
+INSERT INTO `ci_sessions` VALUES ('g55nicqj3ovs0g7ass8djlh835v8t442', '103.246.3.30', 1554529891, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343532393839313B);
+INSERT INTO `ci_sessions` VALUES ('g69m5pogn4beaq5gdefp3r5a3qrst7ra', '103.246.3.30', 1554087304, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343038373135343B6964656E746974797C733A343A22796F6769223B757365726E616D657C733A343A22796F6769223B656D61696C7C733A31363A22796F6769406B6F72746973612E636F6D223B757365725F69647C733A313A2235223B6F6C645F6C6173745F6C6F67696E7C733A31303A2231353534303835303333223B6C6173745F636865636B7C693A313535343038353331373B67726176617461727C733A33323A223531316335636163663333633630646139343065643361626664306233316334223B);
+INSERT INTO `ci_sessions` VALUES ('gfjv4jbr5ctiek3hvq04hb3b6agoke9e', '103.246.3.30', 1554686701, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343638363730313B);
+INSERT INTO `ci_sessions` VALUES ('hjmt06fsalaphvpo03jkepa3u6nu3rh0', '103.246.3.30', 1554529920, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343532393931373B);
+INSERT INTO `ci_sessions` VALUES ('ibe8bdcmbb3et5dl3c6k2qjg1c0crj3k', '103.246.3.30', 1554687345, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343638373334353B);
+INSERT INTO `ci_sessions` VALUES ('k9fl7gg92oan84u3cqcsn8sa95p80g2i', '103.246.3.30', 1556180208, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535363138303230343B);
+INSERT INTO `ci_sessions` VALUES ('kcpedlutlii0s5sfc6u6oc0p2cam4ipr', '103.246.3.30', 1554088105, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343038373831303B6964656E746974797C733A343A22796F6769223B757365726E616D657C733A343A22796F6769223B656D61696C7C733A31363A22796F6769406B6F72746973612E636F6D223B757365725F69647C733A313A2235223B6F6C645F6C6173745F6C6F67696E7C733A31303A2231353534303835303333223B6C6173745F636865636B7C693A313535343038353331373B67726176617461727C733A33323A223531316335636163663333633630646139343065643361626664306233316334223B);
+INSERT INTO `ci_sessions` VALUES ('kr0spgicskcaro4k8useqj5eft3rq09f', '103.246.3.30', 1554085311, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343038353235353B);
+INSERT INTO `ci_sessions` VALUES ('lbkrst2e8g6b2sf4qcrp170427qe24di', '103.246.3.30', 1556182381, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535363138323338313B);
+INSERT INTO `ci_sessions` VALUES ('nft04i6us160q48selkqkmtjfmq97llf', '103.246.3.30', 1557206474, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535373230363434333B);
+INSERT INTO `ci_sessions` VALUES ('nmhfmsdui0utn7t4bmcjuhi5pcgrsnp2', '103.246.3.30', 1554176298, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343137363239383B);
+INSERT INTO `ci_sessions` VALUES ('nnqr1pi2rsmhqan5db9t759heu3s14mh', '103.246.3.30', 1554173776, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343137333737363B6964656E746974797C733A31333A2261646D696E6973747261746F72223B757365726E616D657C733A31333A2261646D696E6973747261746F72223B656D61696C7C733A31353A2261646D696E4061646D696E2E636F6D223B757365725F69647C733A313A2231223B6F6C645F6C6173745F6C6F67696E7C733A31303A2231353532393835383639223B6C6173745F636865636B7C693A313535343137333737363B67726176617461727C733A33323A223634653162386433346634323564313965316565326561373233366433303238223B);
+INSERT INTO `ci_sessions` VALUES ('nu20840heg7la6u5msa1fv7dv6d4k8hu', '103.246.3.30', 1555557768, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535353535373734383B6964656E746974797C733A343A22796F6769223B757365726E616D657C733A343A22796F6769223B656D61696C7C733A31363A22796F6769406B6F72746973612E636F6D223B757365725F69647C733A313A2235223B6F6C645F6C6173745F6C6F67696E7C733A31303A2231353534393538343038223B6C6173745F636865636B7C693A313535353535373038333B67726176617461727C733A33323A223531316335636163663333633630646139343065643361626664306233316334223B);
+INSERT INTO `ci_sessions` VALUES ('ov3mntkro9jrmm0c1rjsvmvlagfd4h04', '103.246.3.30', 1556182431, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535363138323430353B6964656E746974797C733A31333A2261646D696E6973747261746F72223B757365726E616D657C733A31333A2261646D696E6973747261746F72223B656D61696C7C733A31353A2261646D696E4061646D696E2E636F6D223B757365725F69647C733A313A2231223B6F6C645F6C6173745F6C6F67696E7C733A31303A2231353536313635313232223B6C6173745F636865636B7C693A313535363138323430353B67726176617461727C733A33323A223634653162386433346634323564313965316565326561373233366433303238223B);
+INSERT INTO `ci_sessions` VALUES ('p0uh0vjitrepnoekti340m9g6nv688h3', '103.246.3.30', 1556180543, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535363138303531383B);
+INSERT INTO `ci_sessions` VALUES ('qk59b67h7ou75gdn5uqr6rbq2qjimk3u', '103.246.3.30', 1554687391, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343638373339313B);
+INSERT INTO `ci_sessions` VALUES ('qqqmfn8k6lf3vsbkkeqtesjrmjhgg0rk', '103.246.3.30', 1554173750, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343137333731333B617574685F6D6573736167657C733A32323A223C703E496E636F7272656374204C6F67696E3C2F703E223B5F5F63695F766172737C613A313A7B733A31323A22617574685F6D657373616765223B733A333A226F6C64223B7D);
+INSERT INTO `ci_sessions` VALUES ('ss8q8ta6ms3pss6hfm7i145vf5rom192', '::1', 1554687396, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343638373331343B);
+INSERT INTO `ci_sessions` VALUES ('t7nesidshbr82ml66ljb99noi72vgfqa', '103.246.3.30', 1556162271, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535363136323237313B);
+INSERT INTO `ci_sessions` VALUES ('ua5sncf61h84s54b2rohk0js9ekcipov', '103.246.3.30', 1554085002, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343038343939343B);
+INSERT INTO `ci_sessions` VALUES ('uc9pklcaj2g8togqs6qk4ic4l2uurqgd', '36.76.247.103', 1554176025, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343137363032303B);
+INSERT INTO `ci_sessions` VALUES ('ujq9n5q72g2fpl8ibhkbqqbcvc7pki5e', '103.246.3.30', 1554085597, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343038353331373B6964656E746974797C733A343A22796F6769223B757365726E616D657C733A343A22796F6769223B656D61696C7C733A31363A22796F6769406B6F72746973612E636F6D223B757365725F69647C733A313A2235223B6F6C645F6C6173745F6C6F67696E7C733A31303A2231353534303835303333223B6C6173745F636865636B7C693A313535343038353331373B67726176617461727C733A33323A223531316335636163663333633630646139343065643361626664306233316334223B);
+INSERT INTO `ci_sessions` VALUES ('vdj1gs169tdekhgjpd573m6tg6buqk3u', '103.246.3.30', 1554687320, 0x5F5F63695F6C6173745F726567656E65726174657C693A313535343638373331343B);
+
+-- ----------------------------
+-- Table structure for groups
+-- ----------------------------
+DROP TABLE IF EXISTS `groups`;
+CREATE TABLE `groups`  (
+  `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `description` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of groups
+-- ----------------------------
+INSERT INTO `groups` VALUES (1, 'admin', 'Administrator');
+INSERT INTO `groups` VALUES (2, 'members', 'General User');
+
+-- ----------------------------
+-- Table structure for login_attempts
+-- ----------------------------
+DROP TABLE IF EXISTS `login_attempts`;
+CREATE TABLE `login_attempts`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `ip_address` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `login` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `time` int(11) UNSIGNED NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Table structure for n_categori_typeschool
+-- ----------------------------
+DROP TABLE IF EXISTS `n_categori_typeschool`;
+CREATE TABLE `n_categori_typeschool`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `idtb_typeschool` varchar(5) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'id dari table n_type_school',
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of n_categori_typeschool
+-- ----------------------------
+INSERT INTO `n_categori_typeschool` VALUES (1, '1', 'Paud');
+INSERT INTO `n_categori_typeschool` VALUES (2, '1', 'Raudatul Athfal');
+INSERT INTO `n_categori_typeschool` VALUES (3, '2', 'Negeri');
+INSERT INTO `n_categori_typeschool` VALUES (4, '2', 'Swasta');
+INSERT INTO `n_categori_typeschool` VALUES (5, '2', 'Madrasah Ibtidaiyah');
+
+-- ----------------------------
+-- Table structure for n_menu
+-- ----------------------------
+DROP TABLE IF EXISTS `n_menu`;
+CREATE TABLE `n_menu`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `link` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `icon` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `parent` int(11) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of n_menu
+-- ----------------------------
+INSERT INTO `n_menu` VALUES (1, 'Dashboard', 'dashboard', 'dashboard', 0);
+INSERT INTO `n_menu` VALUES (2, 'Ticket Order', 'ticket_order', 'shopping_chart', 0);
+INSERT INTO `n_menu` VALUES (3, 'School Member', 'school_member', 'school', 0);
+INSERT INTO `n_menu` VALUES (4, 'Setup', '#', 'settings', 0);
+INSERT INTO `n_menu` VALUES (5, 'Ticket Type', 'ticket_type', '', 4);
+INSERT INTO `n_menu` VALUES (6, 'Ticket Category', 'ticket_category', '', 4);
+INSERT INTO `n_menu` VALUES (7, 'Session', 'session', '', 4);
+INSERT INTO `n_menu` VALUES (8, 'User', 'user', '', 4);
+INSERT INTO `n_menu` VALUES (9, 'Menu', 'menu', '', 4);
+INSERT INTO `n_menu` VALUES (10, 'Ticket', 'ticket', 'card_membership', 0);
+INSERT INTO `n_menu` VALUES (11, 'Quota Ticket', 'quota_ticket', 'setting', 4);
+
+-- ----------------------------
+-- Table structure for n_quota
+-- ----------------------------
+DROP TABLE IF EXISTS `n_quota`;
+CREATE TABLE `n_quota`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ticket_date` date NULL DEFAULT NULL,
+  `id_category_ticket` int(1) NULL DEFAULT NULL,
+  `quota_sess1` varchar(5) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `quota_sess2` varchar(5) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Table structure for n_school_members
+-- ----------------------------
+DROP TABLE IF EXISTS `n_school_members`;
+CREATE TABLE `n_school_members`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `idtypeschool` varchar(5) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'id ini dari n_type_school',
+  `id_categori_typeschool` varchar(5) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'id ini dari n_categori_typeschool',
+  `sub_district` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `qty_user` int(255) NULL DEFAULT NULL,
+  `leader` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `no_hp` varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `addres` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `status` varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `creat_at` timestamp(0) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Table structure for n_school_order
+-- ----------------------------
+DROP TABLE IF EXISTS `n_school_order`;
+CREATE TABLE `n_school_order`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_school_member` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `name_school` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `name_leader` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'Nama Pihak Pertama',
+  `position` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'Jabatan pihak kedua',
+  `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'Alamat pihak pertama',
+  `id_ticket` varchar(2) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'dari table n_ticket',
+  `price_ticket` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'Harga Ticket per pemesanan',
+  `pcs` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `food` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'makanan = Rp. 20.000/pack',
+  `total_pay` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `cash` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'Pembayaran lunas',
+  `dp` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'Pembayaran DP',
+  `period_from` date NULL DEFAULT NULL COMMENT 'Periode Kerjasama Dari',
+  `period_to` date NULL DEFAULT NULL COMMENT 'Pembayaran Kerjasama Sampai dengan',
+  `percent_pay` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'Tempo Pembayaran %',
+  `dp_date_pay` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'DP dibayarkan paling lambat',
+  `date_cash` date NULL DEFAULT NULL COMMENT 'hari dari tanggal perjanjian, dan pelunasan paling lambat tgl',
+  `status` varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `order_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `barcode` varchar(17) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `creat_at` timestamp(0) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Table structure for n_session
+-- ----------------------------
+DROP TABLE IF EXISTS `n_session`;
+CREATE TABLE `n_session`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` int(1) NULL DEFAULT NULL,
+  `session1` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `session2` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `day` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `holiday` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of n_session
+-- ----------------------------
+INSERT INTO `n_session` VALUES (1, 1, '[\"09:00\",\"15:00\",\"6\"]', '[]', '[\"2\",\"3\",\"4\",\"5\"]', '[]');
+INSERT INTO `n_session` VALUES (2, 2, '[\"09:00\",\"14:00\",\"5\"]', '[\"15:00\",\"20:00\",\"5\"]', '[\"6\",\"7\"]', '[]');
+INSERT INTO `n_session` VALUES (3, 3, '[\"09:00\",\"14:00\",\"5\"]', '[\"15:00\",\"20:00\",\"5\"]', '[]', '[[\"09.11.2019\",\"09.11.2019\",\"Maulid Nabi\"],[\"25.12.2019\",\"25.12.2019\",\"Hari Natal\"],[\"21.12.2019\",\"31.12.2019\",\"Libur natal & tahun baru\"],[\"01.01.2020\",\"01.01.2020\",\"Tahun Baru 2020\"],[\"01.01.2020\",\"05.01.2020\",\"Libur tahun baru\"],[\"25.01.2020\",\"25.01.2020\",\"Tahun Baru Imlek\"],[\"22.03.2020\",\"22.03.2020\",\"Isro Mi\'roj\"],[\"25.03.2020\",\"25.03.2020\",\"Hari Raya Nyepi\"],[\"10.04.2019\",\"10.04.2019\",\"Jumat Agung\"],[\"01.05.2020\",\"01.05.2020\",\"Hari Buruh\"],[\"07.05.2020\",\"07.05.2020\",\"Hari Raya Waisak\"],[\"21.05.2020\",\"21.05.2020\",\"Kenaikan Isa Al Masih\"]]');
+
+-- ----------------------------
+-- Table structure for n_session_type
+-- ----------------------------
+DROP TABLE IF EXISTS `n_session_type`;
+CREATE TABLE `n_session_type`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of n_session_type
+-- ----------------------------
+INSERT INTO `n_session_type` VALUES (1, 'WEEK DAY');
+INSERT INTO `n_session_type` VALUES (2, 'WEEK END');
+INSERT INTO `n_session_type` VALUES (3, 'HOLIDAY');
+
+-- ----------------------------
+-- Table structure for n_ticket
+-- ----------------------------
+DROP TABLE IF EXISTS `n_ticket`;
+CREATE TABLE `n_ticket`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `ticket_type` int(1) NULL DEFAULT NULL,
+  `ticket_category` int(1) NULL DEFAULT NULL,
+  `session_type` int(1) NULL DEFAULT NULL,
+  `price` decimal(10, 0) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of n_ticket
+-- ----------------------------
+INSERT INTO `n_ticket` VALUES (1, 'R B WD', 1, 1, 1, 0);
+INSERT INTO `n_ticket` VALUES (2, 'R K WD', 1, 2, 1, 95000);
+INSERT INTO `n_ticket` VALUES (3, 'R A WD', 1, 3, 1, 85000);
+INSERT INTO `n_ticket` VALUES (4, 'R S WD', 1, 4, 1, 65000);
+INSERT INTO `n_ticket` VALUES (5, 'R B WE', 1, 1, 2, 0);
+INSERT INTO `n_ticket` VALUES (6, 'R K WE', 1, 2, 2, 110000);
+INSERT INTO `n_ticket` VALUES (7, 'R A WE', 1, 3, 2, 95000);
+INSERT INTO `n_ticket` VALUES (8, 'R S WE', 1, 4, 2, 70000);
+INSERT INTO `n_ticket` VALUES (9, 'R B HD', 1, 1, 3, 0);
+INSERT INTO `n_ticket` VALUES (10, 'R K HD', 1, 2, 3, 140000);
+INSERT INTO `n_ticket` VALUES (11, 'R A HD', 1, 3, 3, 120000);
+INSERT INTO `n_ticket` VALUES (12, 'R S HD', 2, 4, 3, 95000);
+INSERT INTO `n_ticket` VALUES (13, 'S G WD', 2, 5, 1, 0);
+
+-- ----------------------------
+-- Table structure for n_ticket_category
+-- ----------------------------
+DROP TABLE IF EXISTS `n_ticket_category`;
+CREATE TABLE `n_ticket_category`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `age_range` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of n_ticket_category
+-- ----------------------------
+INSERT INTO `n_ticket_category` VALUES (1, 'Baby / toddler ', ' 0 - 2 Years old ');
+INSERT INTO `n_ticket_category` VALUES (2, 'Kid', ' 3 - 17 Years Old ');
+INSERT INTO `n_ticket_category` VALUES (3, 'Adult', ' 18 - 59 Years Old ');
+INSERT INTO `n_ticket_category` VALUES (4, 'Senior Citizen', ' > 60 Years Old ');
+INSERT INTO `n_ticket_category` VALUES (5, 'SCHOOL GROUP', ' 6 - 12 Years old ');
+
+-- ----------------------------
+-- Table structure for n_ticket_order
+-- ----------------------------
+DROP TABLE IF EXISTS `n_ticket_order`;
+CREATE TABLE `n_ticket_order`  (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `order_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `order_date` datetime(0) NULL DEFAULT NULL,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `phone` varchar(14) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `play_date` date NULL DEFAULT NULL,
+  `session_choice` int(1) NULL DEFAULT NULL COMMENT 'from n_session => colomn session1 or session2',
+  `price_total` int(10) NULL DEFAULT NULL,
+  `payment_status` int(1) NULL DEFAULT NULL COMMENT '0: reject; 1: approve; 2: reschedule;',
+  `attachment` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `barcode` varchar(18) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `status_generate` varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'Status 1 jika sudah tergenerate ke tb tick_list',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Table structure for n_ticket_order_list
+-- ----------------------------
+DROP TABLE IF EXISTS `n_ticket_order_list`;
+CREATE TABLE `n_ticket_order_list`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `ticket_id` int(11) NULL DEFAULT NULL,
+  `qty` int(10) NULL DEFAULT NULL,
+  `price` int(10) NULL DEFAULT NULL,
+  `barcode` varchar(18) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Table structure for n_ticket_type
+-- ----------------------------
+DROP TABLE IF EXISTS `n_ticket_type`;
+CREATE TABLE `n_ticket_type`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of n_ticket_type
+-- ----------------------------
+INSERT INTO `n_ticket_type` VALUES (1, 'REGULER');
+INSERT INTO `n_ticket_type` VALUES (2, 'SCHOOL GROUP');
+
+-- ----------------------------
+-- Table structure for n_type_school
+-- ----------------------------
+DROP TABLE IF EXISTS `n_type_school`;
+CREATE TABLE `n_type_school`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of n_type_school
+-- ----------------------------
+INSERT INTO `n_type_school` VALUES (1, 'Taman Kanak-Kanak');
+INSERT INTO `n_type_school` VALUES (2, 'Sekolah Dasar');
+
+-- ----------------------------
+-- Table structure for n_user
+-- ----------------------------
+DROP TABLE IF EXISTS `n_user`;
+CREATE TABLE `n_user`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Table structure for users
+-- ----------------------------
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `ip_address` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `username` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `email` varchar(254) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `activation_selector` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `activation_code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `forgotten_password_selector` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `forgotten_password_code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `forgotten_password_time` int(11) UNSIGNED NULL DEFAULT NULL,
+  `remember_selector` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `remember_code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `created_on` int(11) UNSIGNED NOT NULL,
+  `last_login` int(11) UNSIGNED NULL DEFAULT NULL,
+  `active` tinyint(1) UNSIGNED NULL DEFAULT NULL,
+  `first_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `last_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `company` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `phone` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE INDEX `uc_email`(`email`) USING BTREE,
+  UNIQUE INDEX `uc_activation_selector`(`activation_selector`) USING BTREE,
+  UNIQUE INDEX `uc_forgotten_password_selector`(`forgotten_password_selector`) USING BTREE,
+  UNIQUE INDEX `uc_remember_selector`(`remember_selector`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of users
+-- ----------------------------
+INSERT INTO `users` VALUES (1, '127.0.0.1', 'administrator', '$2y$12$ESR4Yguw0zPzKuu/GcBZZetx5f/GV.sHDmsgelHGm8h2JTXwftTX2', 'admin@admin.com', NULL, '', NULL, NULL, NULL, '3336e47ba360ebfbd94791f4c5b737b4d30ebe28', '$2y$10$BOQ6V6wd.3XrgBwSXuVQfu28JDa0rg50QQPTShkhgi2UMMzH2w9Z6', 1268889823, 1558320248, 1, 'Admin', 'istrator', 'ADMIN', '0');
+INSERT INTO `users` VALUES (5, '103.246.3.30', 'yogi', '$2y$12$i9EfKSJt4GvV082DyBqTfuSakQkRE.u5Oh4xiBrW4lilu2wTpMXYa', 'yogi@kortisa.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1552531561, 1557197049, 1, 'Yogikkk', 'Kortisa', NULL, NULL);
+INSERT INTO `users` VALUES (6, '103.246.3.30', 'kortisa', '$2y$12$pYBAiQWLuyl5L9utsnDx3.Ac.SuAxs1bslvETGngBEB5yoGsJGmLS', 'yogi.wewew@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1552711154, 1553045600, 1, 'kortisa', 'saja', NULL, NULL);
+INSERT INTO `users` VALUES (7, '125.163.145.145', 'adminarif', '$2y$12$em2kNqFZoB47yLjnfMo9X.pAsNxYs4VokXCeReIyV.2Vy9N2VOOyu', 'arifbacdhim8@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1556769846, 1558325405, 1, 'arif hadi', 'saputra', NULL, NULL);
+
+-- ----------------------------
+-- Table structure for users_groups
+-- ----------------------------
+DROP TABLE IF EXISTS `users_groups`;
+CREATE TABLE `users_groups`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) UNSIGNED NOT NULL,
+  `group_id` mediumint(8) UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE INDEX `uc_users_groups`(`user_id`, `group_id`) USING BTREE,
+  INDEX `fk_users_groups_users1_idx`(`user_id`) USING BTREE,
+  INDEX `fk_users_groups_groups1_idx`(`group_id`) USING BTREE,
+  CONSTRAINT `fk_users_groups_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
+  CONSTRAINT `fk_users_groups_users1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
+) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of users_groups
+-- ----------------------------
+INSERT INTO `users_groups` VALUES (1, 1, 1);
+INSERT INTO `users_groups` VALUES (5, 5, 1);
+INSERT INTO `users_groups` VALUES (6, 6, 1);
+INSERT INTO `users_groups` VALUES (7, 7, 1);
+
+SET FOREIGN_KEY_CHECKS = 1;
